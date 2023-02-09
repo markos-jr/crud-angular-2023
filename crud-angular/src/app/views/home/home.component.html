@@ -1,6 +1,8 @@
 
 <div class="container">
-    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <button mat-button color="primary" (click)="openDialog(null)">Add Event</button>
+
+    <table mat-table #table [dataSource]="dataSource" class="mat-elevation-z8">
 
 
         <!-- Position Column -->
