@@ -17,6 +17,10 @@ import {ElementDialogComponent} from './shared/element-dialog/element-dialog.com
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+
+import { MatNativeDateModule } from '@angular/material/core';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -27,6 +31,7 @@ import { FormsModule } from '@angular/forms';
     HeaderComponent,
     FooterComponent,
     ElementDialogComponent,
+ 
     
     
   ],
@@ -43,6 +48,9 @@ import { FormsModule } from '@angular/forms';
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    ReactiveFormsModule,
     
   ],
   providers: [],

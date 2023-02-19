@@ -1,6 +1,8 @@
 
 
-<h1 mat-dialog-title>Create Element {{ data.name }}</h1>
+<div class="container">
+  <h1 *ngIf="!isChange"  mat-dialog-title>Create Element</h1>
+<h1 *ngIf="isChange"  mat-dialog-title>Edit Element</h1>
 <div mat-dialog-content>
   <!-- Forme -->
   <mat-form-field appearance="fill">
@@ -22,9 +24,14 @@
     <mat-label>Symbol</mat-label>
     <input matInput [(ngModel)]="data.symbol" />
   </mat-form-field>
-</div>
+ 
 
 <div mat-dialog-actions>
+<div class="butaoModal">
   <button mat-button (click)="onNoClick()">Cancel</button>
-  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Create </button>
+  <button mat-button *ngIf="!isChange" [mat-dialog-close]="data" cdkFocusInitial>Create </button>
+  <button mat-button *ngIf="isChange" [mat-dialog-close]="data" cdkFocusInitial>Edit</button>
+</div>
+</div>
+
 </div>
