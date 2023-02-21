@@ -5,3 +5,8 @@ table {
 .container{
     padding: 50px 80px;
 }
+
+.mat-mdc-button:not(:disabled){
+  background-color: rgb(136, 255, 0);
+  
+}
